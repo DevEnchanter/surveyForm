@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- The document type declaration for HTML5 -->
+
+<html lang="en">
+<!-- The start of the HTML document. The lang attribute specifies the language of the document -->
+
+  <head>
+    <!-- The head of the document, containing meta information and links -->
+
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the HTML document -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For compatibility with Internet Explorer -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport to scale properly on all devices -->
+
+    <title>Survey Form</title>
+    <!-- Sets the title of the document -->
+
+    <link href="styles.css" rel="stylesheet">
+    <!-- Links to the external CSS stylesheet -->
+
+  </head>
+
+  <body>
+    <!-- The body of the document, containing all content that will be visible on the page -->
+
+    <h1 id="title">Survey Form</h1>
+    <!-- Main heading of the page -->
+
+    <p id="description">
+      <!-- Description paragraph -->
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form">
+    <!-- The start of the form -->
+
+      <label for="name" id="name-label">
+        <!-- Label for name input -->
+        Name <input id="name" name="name" type="text" placeholder="Enter your name" required>
+      </label>
+
+      <label for="email" id="email-label">
+        <!-- Label for email input -->
+        Email <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </label>
+
+      <label for="age" id="number-label">
+        <!-- Label for age input -->
+        Age(optional) <input type="number" id="number" name="age" min="13" max="120" placeholder="Age">
+      </label>
+
+      <label>
+        <!-- Label and dropdown for occupation -->
+        What is your occupation?
+        <select id="dropdown">
+          <option>Select your occupation</option>
+          <option>Scientist</option>
+          <option>Student</option>
+          <option>Engineer</option>
+          <option>Other</option>
+          <option>Prefer not to say</option>
+        </select>
+      </label>
+
+      <label for="radio-button">
+        <!-- Label and radio button group for recommendation -->
+        Would you recommend visiting Mars to a friend?
+        <fieldset id="radio-button">
+          <label><input type="radio" name="radio" value="definitely"> Definitely</label>
+          <label><input type="radio" name="radio" value="maybe"> Maybe</label>
+          <label><input type="radio" name="radio" value="not-sure"> Not Sure</label>
+        </fieldset>
+      </label>
+
+      <label>
+        <!-- Label and dropdown for interests -->
+        What interests you most about Mars?
+        <select id="dropdown">
+          <option>Select one</option>
+          <option>Scientific research</option>
+          <option>Space exploration</option>
+          <option>Possibility of life</option>
+          <option>Martian landscapes</option>
+        </select>
+      </label>
+
+      <label>
+        <!-- Label and checkbox group for improvements -->
+        What would you like to see improved in a Mars mission? (Check all that apply)
+        <fieldset>
+          <label><input type="checkbox" value="option-1">Comfort during travel </label>
+          <label><input type="checkbox" value="option-2">Safety measures </label>
+          <label><input type="checkbox" value="option-3">Duration of the journey </label>
+          <label><input type="checkbox" value="option-4">Communication with Earth </label>
+          <label><input type="checkbox" value="option-5">Space food </label>
+          <label><input type="checkbox" value="option-6">Training before departure </label>
+        </fieldset>
+      </label>
+
+      <label>
+        <!-- Label and textarea for comments -->
+        Any comments or suggestions?
+        <textarea rows=5rem placeholder="Enter your comment here..."></textarea>
+      </label>
+
+      <input type="submit" id="submit">
+      <!-- Submit button for the form -->
+
+    </form>
+
+  </body>
+
+</html>

@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    /* Removes default margin from the body */
+    padding: 0;
+    /* Removes default padding from the body */
+    box-sizing: border-box;
+    /* Makes the width and height properties include the padding and border */
+    width: 100vw;
+    /* Sets the width of the body to fill the viewport */
+    height: 100vh;
+    /* Sets the height of the body to fill the viewport */
+    font-family: Tahoma;
+    /* Sets the default font family for the body */
+    font-size: 16px;
+    /* Sets the default font size for the body */
+    color: white;
+    /* Sets the default text color for the body */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.vaisala.com/sites/default/files/styles/16_9_liftup_extra_large/public/images/LIFT-Mars_3D-illustration_1600x900.jpg?itok=LXD2_eIa');
+    /* Applies a background image and a gradient overlay for darkening */
+    background-size: cover;
+    /* Resizes the background image to cover the entire container */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-position: center;
+    /* Centers the background image */
+    background-attachment: fixed;
+    /* Makes the background image fixed, creating a "parallax" effect */
+  }
+  
+  h1, p {
+    text-align: center;
+    /* Centers the text */
+    margin: 1rem 0;
+    /* Applies a top and bottom margin */
+  }
+  
+  label, input, select, textarea, fieldset{
+    display: block;
+    /* Makes these elements block-level, so they fill the width of their container */
+    width: 100%;
+    /* Sets their width to fill their container */
+  }
+  
+  #name, #email, #number, #dropdown {
+    height: 2.3rem;
+    /* Sets a specific height */
+    border-radius: 5px;
+    /* Rounds the corners */
+    font-size: 15px;
+    /* Sets the font size */
+    margin: 0.5rem 0 1.5rem 0;
+    /* Applies top and bottom margins */
+    padding-left: 1rem;
+    /* Applies left padding */
+  }
+  
+  #survey-form {
+    width: 60vw;
+    /* Sets the width to 60% of the viewport width */
+    max-width: 500px;
+    /* Limits the maximum width */
+    min-width: 300px;
+    /* Sets a minimum width */
+    margin: 0 auto;
+    /* Centers the form horizontally */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    /* Applies a gradient overlay for darkening */
+    padding: 3rem;
+    /* Applies padding */
+  }
+  
+  fieldset {
+    border: none;
+    /* Removes the default border */
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    width: 10px;
+    /* Sets a specific width */
+    display: inline-block;
+    /* Makes these elements inline, so they don't fill the width of their container */
+    transform: scale(1.8);
+    /* Enlarges these elements */
+    margin: 0.5rem 0.5rem; 
+    /* Applies margin */
+  }
+  
+  textarea {
+    margin-top: 0.5rem;
+    /* Applies top margin */
+    border-radius: 3px;
+    /* Rounds the corners */
+    font-size: 15px;
+    /* Sets the font size */
+    padding-left: 1rem;
+    /* Applies left padding */
+    padding-top: 0I'm sorry, the message got cut off. Here's the continuation of the commented CSS:
+  
+  ```css
+    padding-top: 0.3rem;
+    /* Applies top padding */
+  }
+  
+  input[type="submit"] {
+    margin-top: 1rem;
+    /* Applies top margin */
+    border-radius: 3px;
+    /* Rounds the corners */
+    height: 3rem;
+    /* Sets a specific height */
+    background-color: rgb(0, 170, 0);
+    /* Sets the background color */
+  }
+  
